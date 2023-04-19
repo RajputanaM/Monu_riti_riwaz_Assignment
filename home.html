@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Wedding Website</title>
+    <!-- Add Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="container mt-3 mb-3">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="images/logo.png" alt="">
+            </div>
+            <div class="col-md-6 text-right">
+                <a href="#venues" class="btn btn-primary btn-nav" onclick="smoothScroll('#venues')">Venues</a>
+                <a href="#photograph" class="btn btn-primary btn-nav" onclick="smoothScroll('#photograph')">Photographers</a>
+                <a href="#mehndi" class="btn btn-primary btn-nav" onclick="smoothScroll('#mehndi')">Mehndi Artist</a>
+                <a href="#makeup" class="btn btn-primary btn-nav" onclick="smoothScroll('#makeup')">Makeup/hair</a>
+                <a href="#food" class="btn btn-primary btn-nav" onclick="smoothScroll('#food')">Caterers</a>
+            </div>
+        </div>
+    </header>
+    <!-- Large Header with Welcome Text -->
+    <header class="jumbotron text-center">
+
+        <h1 class="display-4">We will make the arrangements!</h1>
+        <p class="lead">"You just enjoy the Wedding"</p>
+    </header>
+
+    <!-- yha pe add krna h -->
+    
+    <header class="jumbotron footer text-center">
+        <h1>Best Wishes for your Wedding from Riti-Riwaz</h1>
+    </header>
+
+    <!-- Add Bootstrap and jQuery JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.15/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function smoothScroll(target) {
+            var targetElement = document.querySelector(target);
+            window.scrollTo({
+                top: targetElement.offsetTop,
+                behavior: 'smooth' // Add smooth scrolling animation effect
+            });
+        }
+    </script>
+</body>
+
+</html>
